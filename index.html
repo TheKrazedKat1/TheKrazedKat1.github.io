@@ -80,6 +80,28 @@
         <h2>About Me</h2>
         <p><b>Name:</b> Pearce, goes by Kat on Youtube and on some social media platforms (a.k.a TheKrazedKat)</p>
         <p><b>Pronouns:</b> Any works for me, but usually He/They</p>
+        <p><b>Favorite Colour:</b> Purple (no shit sherlock)</p>
+        <p><b>Favorite Animal:</b> Axolotls are fucking ADORABLE!!!!! </p>
+        <p><b>Age:</b> <span id="age"></span></p>
+
+        <script>
+            function calculateAge(birthDate) {
+                let today = new Date();
+                let birth = new Date(birthDate);
+                let age = today.getFullYear() - birth.getFullYear();
+                let monthDiff = today.getMonth() - birth.getMonth();
+                let dayDiff = today.getDate() - birth.getDate();
+
+                if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0) {
+                    age--;
+                }
+                return age;
+            }
+
+            let birthDate = new Date(2010, 6, 9);
+            document.getElementById("age").textContent = calculateAge(birthDate);
+        
+        </script>
     </div>
 </body>
 </html>
