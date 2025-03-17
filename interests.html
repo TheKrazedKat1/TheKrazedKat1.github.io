@@ -35,16 +35,36 @@
         .container {
             padding: 50px;
         }
-        h1 {
+        h1, h2, li {
             text-align: center;
             color: white;
+        }
+        
+        /* GIF Styling */
+        .gif-container {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .gif-container img {
+            width: 100px; 
+            height: auto;
+        }
+        .left-gifs {
+            left: 10px;
+        }
+        .right-gifs {
+            right: 10px;
         }
     </style>
 </head>
 <body>
+
     <h1>Interests!!!</h1>
-</body>
-    <body>
+
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -52,8 +72,36 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-</body>
-</html>
+
+    <div class="container">
+        <h2>WAYY to lazy to style this shit rn, so enjoy the images and bullet points.</h2>
+        <ul>
+            <li>Music (Specifically MCR, Korn, FFDP, LS Dunes, Circa Survive, and more)</li>
+            <li>Men (I am a RAGING cis homosexual man)</li>
+            <li>Tech nerd and script kiddie</li>
+            <li>Environmental science (because I'm scientific)</li>
+            <li>Political science (because I'm stubborn)</li>
+            <li>Math (specifically logarithms, geometry, and trigonometry)</li>
+            <li>TV and Movies (I will CRY over anything in both movies and shows)</li>
+            <li>Basic human rights (because I'm not a bigot)</li>
+        </ul>
+    </div>
+
+   
+    <div class="gif-container left-gifs">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 1">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 2">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 3">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 4">
+    </div>
 
     
+    <div class="gif-container right-gifs">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 5">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 6">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 7">
+        <img src="https://via.placeholder.com/100x100.gif" alt="GIF 8">
+    </div>
+
+</body>
 </html>
